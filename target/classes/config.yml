@@ -1,0 +1,26 @@
+categories:
+  survival:
+    - world
+    - world_nether
+    - world_the_end
+  minigames:
+    - bedwars
+    - skywars
+    - parkour
+  creative:
+    - creative
+    - plotworld
+
+settings:
+  # Enable or disable the divider system entirely
+  enabled: true
+  
+  # Enable debug logging for troubleshooting player visibility
+  debug-logging: false
+  
+  # Whether to automatically update visibility when a player changes worlds
+  update-on-world-change: true
+  
+  # Delay in ticks before calculating visibility after an event (20 ticks = 1 second)
+  # Keeping a small delay ensures teleportations and world changes have fully processed
+  update-delay-ticks: 20

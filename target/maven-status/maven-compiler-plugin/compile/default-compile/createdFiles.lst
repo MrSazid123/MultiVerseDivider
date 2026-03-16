@@ -1,0 +1,9 @@
+com\minoid\multiversedivider\MultiVerseDivider.class
+com\minoid\multiversedivider\listener\PlayerListener.class
+com\minoid\multiversedivider\manager\VisibilityManager$2.class
+com\minoid\multiversedivider\manager\CategoryManager.class
+com\minoid\multiversedivider\command\ReloadCommand.class
+com\minzoid\dev\MultiVerseDivider.class
+com\minoid\multiversedivider\manager\VisibilityManager.class
+com\minoid\multiversedivider\manager\ConfigManager.class
+com\minoid\multiversedivider\manager\VisibilityManager$1.class

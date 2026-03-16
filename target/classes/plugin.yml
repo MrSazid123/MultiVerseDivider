@@ -1,0 +1,13 @@
+name: MultiVerseDivider
+version: 1.0.0
+main: com.minoid.multiversedivider.MultiVerseDivider
+api-version: '1.21'
+depend: [Multiverse-Core]
+commands:
+  multiversedivider:
+    description: Main command for MultiVerseDivider
+    aliases: [mvd, mvdv]
+permissions:
+  multiversedivider.admin:
+    description: Allows reloading the plugin configuration
+    default: op
