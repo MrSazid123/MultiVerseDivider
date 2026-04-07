@@ -38,7 +38,9 @@ public class MultiVerseDivider extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        getLogger().info("------------------------------------");
         getLogger().info("MultiVerseDivider has been disabled!");
+        getLogger().info("------------------------------------");
     }
 
     public CategoryManager getCategoryManager() {
