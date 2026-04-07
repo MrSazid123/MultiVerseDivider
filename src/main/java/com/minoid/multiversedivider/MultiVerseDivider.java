@@ -1,13 +1,15 @@
 package com.minoid.multiversedivider;
 
+import org.bukkit.plugin.java.JavaPlugin;
+
 import com.minoid.multiversedivider.command.ReloadCommand;
 import com.minoid.multiversedivider.listener.PlayerListener;
 import com.minoid.multiversedivider.manager.CategoryManager;
 import com.minoid.multiversedivider.manager.ConfigManager;
 import com.minoid.multiversedivider.manager.VisibilityManager;
-import org.bukkit.plugin.java.JavaPlugin;
 
 public class MultiVerseDivider extends JavaPlugin {
+
     private CategoryManager categoryManager;
     private ConfigManager configManager;
     private VisibilityManager visibilityManager;
@@ -29,7 +31,9 @@ public class MultiVerseDivider extends JavaPlugin {
         // Initial setup for any players already online (e.g., during reload)
         visibilityManager.updateAllVisibilityWithDelay();
 
+        getLogger().info("-----------------------------------");
         getLogger().info("MultiVerseDivider has been enabled!");
+        getLogger().info("-----------------------------------");
     }
 
     @Override
@@ -37,7 +41,15 @@ public class MultiVerseDivider extends JavaPlugin {
         getLogger().info("MultiVerseDivider has been disabled!");
     }
 
-    public CategoryManager getCategoryManager() { return categoryManager; }
-    public ConfigManager getConfigManager() { return configManager; }
-    public VisibilityManager getVisibilityManager() { return visibilityManager; }
+    public CategoryManager getCategoryManager() {
+        return categoryManager;
+    }
+
+    public ConfigManager getConfigManager() {
+        return configManager;
+    }
+
+    public VisibilityManager getVisibilityManager() {
+        return visibilityManager;
+    }
 }
